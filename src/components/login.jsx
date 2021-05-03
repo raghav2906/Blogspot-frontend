@@ -48,6 +48,7 @@ const Login = ()=>{
                     window.alert('Logged in successfuuly')
                     localStorage.setItem("jwt",data.token)
                     localStorage.setItem("authr",JSON.stringify(data.author))
+                    console.log(data.author)
                     SetUser(data.author)
 
                     history.push('/')
